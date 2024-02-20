@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $baseFontSize;
+
+//    @include tablets {
+//        font-size: $baseFontSize - 1px;
+//    }
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Comfortaa', sans-serif;
+    line-height: 1.42;
+    color: #373B44;
+    background: #FFF9F4;
+    position: relative;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 95%;
+    max-width: $containerWidth;
+    margin: 0 auto;
+    padding: rem(24px) 0 rem(50px);
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+address {
+    font-style: normal;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
