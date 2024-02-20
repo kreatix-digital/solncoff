@@ -149,6 +149,7 @@ img {
 
 .phone-number {
   font-size: 1.125rem;
+  font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
