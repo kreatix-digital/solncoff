@@ -34,6 +34,7 @@ body {
 .container {
     width: 95%;
     max-width: $containerWidth;
+    min-width: none;
     margin: 0 auto;
     padding: rem(24px) 0 rem(50px);
 }
