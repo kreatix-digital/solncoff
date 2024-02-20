@@ -10,7 +10,7 @@
 }
 
 .fixed-menu__item {
-    margin-bottom: rem(20px);
+    margin-bottom: 2em;
     &:hover {
       .fixed-menu__link {
         border-color: #FF6F3C;
@@ -36,8 +36,8 @@
 }
 
 .fixed-menu__link{
-    width: rem(18px);
-    height: rem(18px);
+    width: 1.8em;
+    height: 1.8em;
     border-radius: 50%;
     border: 1px solid transparent;
     display: block;
@@ -46,8 +46,8 @@
     &:before {
         content: "";
         display: block;
-        width: rem(9px);
-        height: rem(9px);
+        width: 0.9em;
+        height: 0.9em;
         border-radius: 50%;
         background: #FF9A3C;
         position: absolute;
