@@ -180,3 +180,57 @@ img {
 .phone-numder__text {
   white-space: nowrap;
 }
+
+.fixed-menu {
+  position: fixed;
+  top: 50%;
+  right: 3%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
+}
+
+.fixed-menu__item {
+  margin-bottom: 1.25rem;
+}
+.fixed-menu__item:hover .fixed-menu__link {
+  border-color: #FF6F3C;
+}
+.fixed-menu__item:hover .fixed-menu__link:before {
+  background: #FF6F3C;
+}
+.fixed-menu__item--active .fixed-menu__link {
+  border-color: #FF6F3C;
+}
+.fixed-menu__item--active .fixed-menu__link:before {
+  background: #FF6F3C;
+}
+.fixed-menu__item:last-child {
+  margin-bottom: 0;
+}
+
+.fixed-menu__link {
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative;
+}
+.fixed-menu__link:before {
+  content: "";
+  display: block;
+  width: 0.5625rem;
+  height: 0.5625rem;
+  border-radius: 50%;
+  background: #FF9A3C;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
