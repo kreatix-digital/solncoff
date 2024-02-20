@@ -146,6 +146,9 @@ img {
   font-weight: 700;
   white-space: nowrap;
 }
+.menu__link:hover {
+  color: #FAAA32;
+}
 
 .phone-number {
   font-size: 1.125rem;

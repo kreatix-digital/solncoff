@@ -54,6 +54,9 @@
     font-size: rem(14px);
     font-weight: 700;
     white-space: nowrap;
+    &:hover {
+        color: #FAAA32;
+    }
 }
 
 .phone-number {
