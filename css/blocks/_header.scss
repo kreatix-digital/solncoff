@@ -3,6 +3,10 @@
     align-items: center;
     justify-content: space-between;
     align-items: flex-start;
+    @include tablets {
+        flex-direction: column;
+        margin-left: 2.5%;
+    }
 }
 
 .logo {
@@ -13,7 +17,12 @@
 .logo__img {
     height: 4em;
     width: 4em;
+    @include tablets {
+        height: 3em;
+        width: 3em;
+    }
 }
+
 
 .logo__name {
     display: flex;
@@ -23,6 +32,9 @@
     font-weight: 700;
     &-right {
         color: #FAAA32;
+    }
+    @include tablets {
+        margin-left: 5px;
     }
 }
 
@@ -66,19 +78,6 @@
     align-items: center;
     padding-top: 0.4em;
     flex-shrink: 0;
-}
-
-.header__phone-number {
-    @include tablets {
-        display: none;
-    }
-}
-
-.phone-number__icon-elem {
-    width: 16px;
-    height: 16px;
-    margin-right: 0.6em;
-    //padding-bottom: 0.3em;
 }
 
 .phone-numder__text {

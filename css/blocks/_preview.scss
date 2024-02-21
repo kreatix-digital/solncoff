@@ -1,5 +1,4 @@
 .preview {
-   // background: url(../../img/vorota.jpg) left 75% center no-repeat;
     height: 100vh;
     min-height: 650px;
     
@@ -12,6 +11,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablets {
+        display: none;
+    }
+}
+.preview__section-mobile {
+    display: none;
+    height: 100%;
+    margin-top: 5em;
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .preview__title-section {
@@ -26,27 +39,15 @@
         align-items: center;
         text-align: center;
 
-        &:before {
-        
-            width: rem(323px);
-            height: rem(323px);
-            content: "";
-            background: url(../img/beats.png) center no-repeat;
-            background-size: cover;
-            margin-bottom: rem(60px);
-        }
     }
 
-    @include phones {
-        &:before {
-            margin-bottom: rem(40px);
-        }
-
-    }
 }
 
 .preview__image-section {
     width: 50%;
+        @include tablets {
+            width: 95%;
+        }
 }
 
 .image__section {
@@ -54,6 +55,9 @@
     border-radius: 10px;
     border: 2px solid;
     border-color: #FF9A3C;
+    @include tablets {
+        height: 100%;
+    }
 }
 
 .preview__icon-section {
@@ -73,18 +77,18 @@
     font-size: 4.8em;
     line-height: 1.1;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 1.5em;
     text-transform: uppercase;
 
     @include tablets {
         padding: 0 5%;
-        margin-bottom: 0;
+        margin-bottom: 0.5em;
     }
 
     @include phones {
-        font-size: rem(32px);
+        font-size: 3.2em;
         padding: 0 10%;
-        margin-bottom: rem(12px);
+        margin-bottom: 1.2em;
     }
 }
 
