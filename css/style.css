@@ -509,7 +509,7 @@ img {
   margin-bottom: 15px;
   text-transform: uppercase;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .catalog__title {
     font-size: 3.2em;
   }
@@ -609,7 +609,7 @@ img {
 .products__item-width {
   width: 40%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .products__item-width {
     width: 100%;
     height: 40%;
@@ -694,40 +694,48 @@ img {
 }
 
 .products__desc {
+  display: none;
   position: relative;
   height: 100%;
 }
+@media screen and (max-width: 768px) {
+  .products__desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .sect {
-  background: url(../img/icon/sect.png) top center no-repeat;
+  background: url(../img/icon/sect.png) top 10% center no-repeat;
 }
 
 .rul {
-  background: url(../img/icon/rul.png) top center no-repeat;
+  background: url(../img/icon/rul.png) top 10% center no-repeat;
 }
 
 .rulw {
-  background: url(../img/icon/rul-2.png) top center no-repeat;
+  background: url(../img/icon/rul-2.png) top 10% center no-repeat;
 }
 
 .rolst {
-  background: url(../img/icon/rolst.png) top center no-repeat;
+  background: url(../img/icon/rolst.png) top 10% center no-repeat;
 }
 
 .auto {
-  background: url(../img/icon/auto.png) top center no-repeat;
+  background: url(../img/icon/auto.png) top 10% center no-repeat;
 }
 
 .vert {
-  background: url(../img/icon/vert.png) top center no-repeat;
+  background: url(../img/icon/vert.png) top 10% center no-repeat;
 }
 
 .gor {
-  background: url(../img/icon/gor.png) top center no-repeat;
+  background: url(../img/icon/gor.png) top 10% center no-repeat;
 }
 
 .otk {
-  background: url(../img/icon/otk.png) top center no-repeat;
+  background: url(../img/icon/otk.png) top 10% center no-repeat;
 }
 
 .products__name {
@@ -737,6 +745,12 @@ img {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {
+  .products__comp-section {
+    display: none;
+  }
 }
 
 .burger {
