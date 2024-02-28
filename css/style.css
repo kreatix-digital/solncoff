@@ -699,27 +699,27 @@ img {
 }
 
 .sect {
-  background: url(../img/icon/sect.png) center center no-repeat;
+  background: url(../img/icon/sect.png) top center no-repeat;
 }
 
 .rul {
-  background: url(../img/icon/rul.png) center center no-repeat;
+  background: url(../img/icon/rul.png) top center no-repeat;
 }
 
 .rulw {
-  background: url(../img/icon/rul-2.png) center center no-repeat;
+  background: url(../img/icon/rul-2.png) top center no-repeat;
 }
 
 .rolst {
-  background: url(../img/icon/rolst.png) center center no-repeat;
+  background: url(../img/icon/rolst.png) top center no-repeat;
 }
 
 .auto {
-  background: url(../img/icon/auto.png) center center no-repeat;
+  background: url(../img/icon/auto.png) top center no-repeat;
 }
 
 .vert {
-  background: url(../img/icon/vert.png) center center no-repeat;
+  background: url(../img/icon/vert.png) top center no-repeat;
 }
 
 .gor {
@@ -727,7 +727,7 @@ img {
 }
 
 .otk {
-  background: url(../img/icon/otk.png) center center no-repeat;
+  background: url(../img/icon/otk.png) top center no-repeat;
 }
 
 .products__name {
