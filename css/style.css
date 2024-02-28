@@ -549,7 +549,7 @@ img {
 }
 
 .products__item {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 700;
   height: 100%;
   padding: 10px;
@@ -723,7 +723,7 @@ img {
 }
 
 .gor {
-  background: url(../img/icon/gor.png) center center no-repeat;
+  background: url(../img/icon/gor.png) top center no-repeat;
 }
 
 .otk {
