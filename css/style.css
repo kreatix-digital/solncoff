@@ -589,7 +589,6 @@ img {
   width: 100%;
   height: 50%;
   border: 2px solid #FF9A3C;
-  background-color: #FFF9F4;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 20px;
@@ -689,7 +688,6 @@ img {
 }
 .products__item-gor {
   border: 2px solid #FF9A3C;
-  background-color: #FFF9F4;
   border-radius: 10px;
   overflow: hidden;
   height: 100%;
@@ -698,7 +696,38 @@ img {
 .products__desc {
   position: relative;
   height: 100%;
-  background: url(../img/icon/sect.png) top center no-repeat;
+}
+
+.sect {
+  background: url(../img/icon/sect.png) center center no-repeat;
+}
+
+.rul {
+  background: url(../img/icon/rul.png) center center no-repeat;
+}
+
+.rulw {
+  background: url(../img/icon/rul-2.png) center center no-repeat;
+}
+
+.rolst {
+  background: url(../img/icon/rolst.png) center center no-repeat;
+}
+
+.auto {
+  background: url(../img/icon/auto.png) center center no-repeat;
+}
+
+.vert {
+  background: url(../img/icon/vert.png) center center no-repeat;
+}
+
+.gor {
+  background: url(../img/icon/gor.png) center center no-repeat;
+}
+
+.otk {
+  background: url(../img/icon/otk.png) center center no-repeat;
 }
 
 .products__name {
