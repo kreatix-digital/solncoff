@@ -747,12 +747,33 @@ img {
           transform: translateX(-50%);
 }
 
+.products__comp {
+  height: 20em;
+}
+@media screen and (max-width: 768px) {
+  .products__comp {
+    display: none;
+  }
+}
+
+.products__comp-section {
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
   .products__comp-section {
     display: none;
   }
 }
 
+/* .products__image-section {
+    //height: 20em;
+    //border-radius: 10px;
+    //border: 2px solid;
+    //border-color: #FF9A3C;
+    @include tablets {
+        height: 100%;
+    }
+} */
 .burger {
   position: fixed;
   top: 20px;

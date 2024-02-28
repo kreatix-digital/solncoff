@@ -203,9 +203,26 @@
     transform: translateX(-50%);
 }
 
+.products__comp {
+    height: 20em;
+    @include tablets {
+        display: none;
+    }
+}
+
 .products__comp-section {
-    //width: 100%;
+    width: 100%;
         @include tablets {
             display: none;
         }
 }
+
+/* .products__image-section {
+    //height: 20em;
+    //border-radius: 10px;
+    //border: 2px solid;
+    //border-color: #FF9A3C;
+    @include tablets {
+        height: 100%;
+    }
+} */
