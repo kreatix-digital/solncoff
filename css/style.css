@@ -550,6 +550,7 @@ img {
 
 .products__item {
   font-size: 1.3em;
+  font-weight: 700;
   height: 100%;
   padding: 10px;
 }
@@ -690,6 +691,21 @@ img {
   border-radius: 10px;
   overflow: hidden;
   height: 100%;
+}
+
+.products__desc {
+  position: relative;
+  height: 100%;
+  background: url(../img/icon/sect.png) top center no-repeat;
+}
+
+.products__name {
+  white-space: nowrap;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .burger {
