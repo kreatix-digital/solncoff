@@ -549,9 +549,14 @@ img {
 }
 
 .products__item {
-  font-size: 1.5em;
+  font-size: 1.3em;
   height: 100%;
   padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .products__item {
+    padding: 5px;
+  }
 }
 .products__item-column {
   width: 20%;
@@ -575,7 +580,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 95%;
+    width: 100%;
     height: 20%;
   }
 }
@@ -593,7 +598,7 @@ img {
 @media screen and (max-width: 768px) {
   .products__item-square {
     margin-bottom: 0;
-    margin-right: 20px;
+    margin-right: 10px;
     height: 100%;
   }
   .products__item-square:last-child {
@@ -605,7 +610,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .products__item-width {
-    width: 95%;
+    width: 100%;
     height: 40%;
   }
 }
@@ -619,10 +624,20 @@ img {
   display: flex;
   padding-bottom: 10px;
 }
+@media screen and (max-width: 768px) {
+  .products__item-two {
+    padding-bottom: 5px;
+  }
+}
 .products__item-two .products__item-square {
   height: 100%;
   margin-bottom: 0;
   margin-right: 20px;
+}
+@media screen and (max-width: 768px) {
+  .products__item-two .products__item-square {
+    margin-right: 10px;
+  }
 }
 .products__item-two .products__item-square:last-child {
   margin-right: 0;
@@ -634,10 +649,20 @@ img {
   display: flex;
   padding-top: 10px;
 }
+@media screen and (max-width: 768px) {
+  .products__item-twoleft {
+    padding-top: 5px;
+  }
+}
 .products__item-twoleft .products__item-square {
   height: 100%;
   margin-bottom: 0;
   margin-right: 20px;
+}
+@media screen and (max-width: 768px) {
+  .products__item-twoleft .products__item-square {
+    margin-right: 10px;
+  }
 }
 .products__item-twoleft .products__item-square:last-child {
   margin-right: 0;
@@ -646,9 +671,19 @@ img {
   height: 50%;
   padding-top: 10px;
 }
+@media screen and (max-width: 768px) {
+  .products__item-wide {
+    padding-top: 5px;
+  }
+}
 .products__item-wideleft {
   height: 50%;
   padding-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .products__item-wideleft {
+    padding-bottom: 5px;
+  }
 }
 .products__item-gor {
   border: 2px solid #FF9A3C;
