@@ -1,0 +1,17 @@
+.reviews__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.reviews__title {
+    font-size: 4.8em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    @include phones {
+        font-size: 3.2em;
+    }
+}

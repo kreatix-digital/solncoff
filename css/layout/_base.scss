@@ -33,17 +33,21 @@ body {
     overflow: hidden;
 }
 
+.section {
+    height: 100vh;
+    min-height: 650px;
+}
+
 .container {
     width: 95%;
     max-width: $containerWidth;
-    min-width: none;
     margin: 0 auto;
-    padding: 1.5em 0 5em;
+    padding: 3em 0 5em;
     @include tablets {
         width: 100%;
         min-width: 100%;
         margin: 0;
-        padding: 10px;
+        padding: 15px 10px;
     }
 }
 

@@ -1,7 +1,5 @@
 .catalog {
     background: #fff;
-    height: 100vh;
-    min-height: 650px;
 }
 
 .catalog__container {
@@ -39,6 +37,7 @@
 }
 
 .products__item {
+    font-size: 1.5em;
     height: 100%;
     padding: 10px;
     &-column {
