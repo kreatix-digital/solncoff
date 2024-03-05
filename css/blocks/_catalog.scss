@@ -204,7 +204,7 @@
 }
 
 .products__comp {
-    height: 20em;
+    height: 100%;
     @include tablets {
         display: none;
     }
@@ -212,9 +212,20 @@
 
 .products__comp-section {
     width: 100%;
+    height: 100%;
         @include tablets {
             display: none;
         }
+}
+
+.products__img {
+    //height: 35em;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #FF9A3C;
+    @include tablets {
+        height: 100%;
+    }
 }
 
 /* .products__image-section {

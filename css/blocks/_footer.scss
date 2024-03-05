@@ -7,22 +7,23 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: left;
     height: 100%;
     padding-bottom: 1em;
 }
 
 .footer__title {
     font-size: 2.4em;
-    margin-bottom: 1em;
     text-transform: none;
-    @include phones {
-        font-size: 3.2em;
-    }
+    @include tablets {
+        margin-bottom: 20px;
+     }
 }
 
 .clients {
     margin-bottom: 2em;
+    @include tablets {
+        display: none;
+    }
 }
 
 .clients__list {
@@ -32,14 +33,18 @@
 }
 
 .clients__item {
-    width: 12%; 
+    width: 16%; 
     height: 8em;
-    border: 2px solid red;
     margin-right: 0.57%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:last-child {
         margin-right: 0;
     }
 }
+
+
 
 .contacts {
     height: 100%;
@@ -89,10 +94,21 @@
     justify-content: space-between;
 }
 
+.work__time {
+    @include tablets {
+        display: none;
+     }
+}
+
 .contacts__form {
     width: 35.5%;
     height: 100%;
-    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    @include tablets {
+        width: 90%;
+    }
+    
 }
 
 .footer__copyright {
@@ -106,4 +122,42 @@
 .footer__text {
     height: 2em;
     font-size: 1.6em;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form__row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__title {
+    font-size: 1.4em;
+}
+
+.form__input {
+    width: 100%;
+    margin-bottom: 0.5em;
+    height: 3em;
+    border-radius: 6px;
+    border: solid 3px transparent;
+    &--textarea {
+       height: 11em;
+       resize: none;
+    }
+    &:focus {
+        border-color: #FAAA32;
+        outline:none;
+    }
+}
+
+.form__buttons {
+    width: 100%;
 }
