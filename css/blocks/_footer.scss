@@ -47,6 +47,10 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2em;
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .contacts__map {
@@ -56,6 +60,9 @@
     justify-content: space-between;
     width: 35.5%;
     margin-right: 2%;
+    @include tablets {
+        display: none;
+     }
 }
 
 .contacts__map-block {
@@ -69,6 +76,9 @@
     width: 25%;
     height: 100%;
     margin-right: 2%;
+    @include tablets {
+        width: 100%;
+     }
 }
 
 .contacts__work {

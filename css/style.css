@@ -991,6 +991,15 @@ img {
           justify-content: space-between;
   margin-bottom: 2em;
 }
+@media screen and (max-width: 768px) {
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
 
 .contacts__map {
   height: 100%;
@@ -1006,6 +1015,11 @@ img {
           justify-content: space-between;
   width: 35.5%;
   margin-right: 2%;
+}
+@media screen and (max-width: 768px) {
+  .contacts__map {
+    display: none;
+  }
 }
 
 .contacts__map-block {
@@ -1024,6 +1038,11 @@ img {
   width: 25%;
   height: 100%;
   margin-right: 2%;
+}
+@media screen and (max-width: 768px) {
+  .contacts__address {
+    width: 100%;
+  }
 }
 
 .contacts__work {
