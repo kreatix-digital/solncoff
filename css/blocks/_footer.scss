@@ -1,21 +1,99 @@
 .footer {
     background: #FFF3EA;
+    color: #000;
 }
 
 .footer__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     height: 100%;
+    padding-bottom: 1em;
 }
 
 .footer__title {
-    font-size: 4.8em;
-    font-weight: 700;
-    margin-bottom: 15px;
-    text-transform: uppercase;
+    font-size: 2.4em;
+    margin-bottom: 1em;
+    text-transform: none;
     @include phones {
         font-size: 3.2em;
     }
+}
+
+.clients {
+    margin-bottom: 2em;
+}
+
+.clients__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clients__item {
+    width: 12%; 
+    height: 8em;
+    border: 2px solid red;
+    margin-right: 0.57%;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.contacts {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.contacts__map {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35.5%;
+    margin-right: 2%;
+}
+
+.contacts__map-block {
+    width: 100%;
+    height: 100%;
+}
+
+.contacts__address {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    margin-right: 2%;
+}
+
+.contacts__work {
+    height: 100%;
+    font-size: 1.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts__form {
+    width: 35.5%;
+    height: 100%;
+    border: 2px solid red;
+}
+
+.footer__copyright {
+    height: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 3px solid #FAAA32;
+}
+
+.footer__text {
+    height: 2em;
+    font-size: 1.6em;
 }
